@@ -1,0 +1,1 @@
+# The project was created for laying out product cards.

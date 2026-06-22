@@ -1,1 +1,1 @@
-# The project was created for laying out product cards.
+# The project was created for laying out product cards. Homework № 1 is completed.

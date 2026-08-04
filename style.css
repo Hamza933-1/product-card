@@ -3,29 +3,58 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #f9f9f9;
+    background-color: #fcfcfc;
     min-height: 100vh;
+    background-image: url('background.png');
+    background-repeat: no-repeat;
+    background-position: top 0 center;
 }
+
+.hero {
+    padding: 100px 20px 40px;
+    text-align: center;
+}
+
+.hero-bg {
+    display: none;
+}
+
+.main-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 78px;
+    color: #515076;
+}
+
 .products {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 20px 60px;
 }
+
 .product-card {
     background-color: #ffffff;
     width: 320px;
-    padding: 20px;
-    border-radius: 8px;
+    padding: 25px;
+    border-radius: 4px;
+    box-shadow: 0 4px 20px rgba(81, 80, 118, 0.15);
 }
+
 .product-card-image {
     width: 100%;
     height: auto;
     display: block;
     margin-bottom: 15px;
 }
+
 .product-card-category {
     font-size: 11px;
     text-transform: uppercase;
@@ -33,24 +62,28 @@ body {
     margin-bottom: 8px;
     letter-spacing: 0.5px;
 }
+
 .product-card-title {
     font-size: 20px;
     font-weight: 700;
     color: #515076;
     margin-bottom: 10px;
 }
+
 .product-card-description {
     font-size: 13px;
     color: #515076;
     line-height: 18px;
     margin-bottom: 15px;
 }
+
 .product-card-subtitle {
     font-size: 14px;
     font-weight: 700;
     color: #1a202c;
     margin-bottom: 8px;
 }
+
 .product-card-list {
     list-style-type: none;
     margin-bottom: 20px;
@@ -71,16 +104,7 @@ body {
     left: 0;
     color: #a0aec0;
 }
-h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 70px;
-    font-weight: 400;
-    line-height: 78px;
-    color: #515076;
-    text-align: center;
-    margin-top: 60px;   
-    margin-bottom: 40px; 
-}
+
 .product-card-price-box {
     display: flex;
     justify-content: space-between;
@@ -89,7 +113,7 @@ h1 {
     width: 100%;
 }
 
-.price-label {
+.product-card__price-label {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-weight: 700;
@@ -97,7 +121,7 @@ h1 {
     color: #515076;
 }
 
-.price-value {
+.product-card__price-value {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-weight: 400;
